@@ -1,0 +1,69 @@
+body {
+margin: 0;
+padding: 0;
+height: 100vh;
+background: linear-gradient(135deg, #2b0040, #0d001a);
+color: #ff99ff;
+font-family: 'Poppins', sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+}
+
+h1 {
+font-size: 2.2em;
+color: #ffb3ff;
+text-shadow: 0 0 10px #ff80ff, 0 0 20px #b366ff;
+margin-bottom: 40px;
+letter-spacing: 1px;
+}
+
+.fade-in {
+opacity: 0;
+animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+to {
+opacity: 1;
+}
+}
+
+.terminal {
+width: 90%;
+max-width: 600px;
+background-color: rgba(20, 0, 40, 0.8);
+border-radius: 10px;
+border: 1px solid #cc66ff;
+box-shadow: 0 0 25px #b366ff;
+padding: 20px;
+text-align: left;
+}
+
+.prompt {
+color: #ff80ff;
+font-weight: 600;
+}
+
+#output {
+white-space: pre-wrap;
+color: #f5d0ff;
+font-size: 0.95em;
+margin-bottom: 10px;
+}
+
+input {
+background: none;
+border: none;
+color: #ffb3ff;
+font-size: 0.95em;
+font-family: inherit;
+outline: none;
+width: 80%;
+}
+
+input::placeholder {
+color: #b366ff;
+}
